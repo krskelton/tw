@@ -1,0 +1,118 @@
+<!-- Kristin Skelton 3/13/15 Final Project
+Contact page for Tracksuit Wedding website -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Tracksuit Wedding</title>
+		
+		<link href='http://fonts.googleapis.com/css?family=Cuprum|Archivo+Narrow' rel='stylesheet' type='text/css'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/south-street/jquery-ui.css" id="theme">
+		<link href="css/parsley.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+	<body class="contact-body">		
+		<!-- Header for logo and navigation -->
+		<div id="header" class="not-main-header">
+			<ul id="nav">
+				<li><a href="index.html"><img id="logo" src="css/images/Tracksuitlogo3.png"></a></li>			
+				<div id="links">
+					<li id="nav_about"><a href="about.html">About</a></li>
+					<li id="nav_gallery"><a href="gallery.html">Images</a></li>
+					<li id="nav_contact"><a href="contact.html">Contact</a></li>
+				</div>
+			</ul>
+		</div>
+
+		<!-- Contact billboard image at top of page -->
+		<div class="contact-title"><img src="css/images/Contact-form.png"></div>
+		<!-- Outer div -->
+		<div class="contact-background">
+			<!-- Div for contact list and social media links -->
+			<div class="inner-contact-div">
+			
+			<div class="contact-list item">
+				<h1 class="contact-header">Follow</h1>
+				<div class="social-form">
+					<a href="https://twitter.com/TracksuitW?lang=en"><img class="social-icon" src="css/images/twitter.png"></a>
+					<a href="https://www.facebook.com/tracksuitwedding"><img class="social-icon" src="css/images/facebook.png"></a>
+				</div><br/>
+				
+				<h1 class="contact-header">Contact</h1>
+				<div class="email-list">	
+					<div>
+						<h3>Booking:</h3>  
+						Ali Frankfurt <a href="mailto:tracksuitwedding@gmail.com">Tracskuitwedding@gmail.com</a><br/><a href="tel:3033783593">(303) 378-3593</a><br/>
+					</div>
+
+					<div>
+						<h3>Management:</h3>  Scott Campbell <br/>
+						<a href="mailto:Scampbell@aeglive.com">Scampbell@aeglive.com</a><br/>
+						<a href="tel:7209318708">(720) 931-8708</a><br/>
+					</div>
+
+					<div>
+						<h3>Producer:</h3>   
+						Elan Morrison <br/>
+						<a href="www.elanmorrison.com">www.elanmorrison.com</a><br/>
+					</div>
+
+					<div class="last-contact">
+						<h3>Sound Technician:</h3>
+						Dave Avery<br/>
+						<a href="mailto:dave@averydesign.com">dave@averydesign.com</a><br/>
+						<a href="tel:3037257515">(303) 725-7515</a><br>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Contact form that uses parsley to validate -->
+			<div class="contact-form"><form action="#" method='post' data-parsley-validate>
+				<h1 class="contact-header">Message</h1>
+				<!-- Name is a required field -->
+				<label for="fullname">Full Name * :</label>
+  				<input class="name" type="text" name="fullname" required /><br/>
+  				
+  				<!-- Email is a required field and validates for valid email -->
+  				<label for="email">Email * :</label>
+  				<input class="email" type="email" name="email" data-parsley-type="email" required /><br/>
+  				
+  				<!-- Checkbox for services requested -->
+  				<label for="services">What services are you interested in :</label>
+				  <p class="services">
+				    Booking <input class="checkbox1" type="checkbox" name="checkbox1" value="book" data-parsley-multiple="mymultiplelink" data-parsley-maxcheck="1"/>
+				    Production <input class="checkbox2" type="checkbox" name="checkbox2" value="produce" data-parsley-multiple="mymultiplelink"/>	   		    				    
+				  <p><br/>
+
+				<!-- Selection for how the user heard about the band -->
+  				<label for="heard">How did you hear about us *:</label>
+				  <select id="heard" required>
+				    <option class="heard" name="heard" value="">Choose..</option>
+				    <option class="heard" name="heard" value="press">Attended a show</option>
+				    <option class="heard" name="heard" value="net">Internet</option>
+				    <option class="heard" name="heard" value="mouth">Word of mouth</option>
+				    <option class="heard" name="heard" value="other">Other..</option>
+				  </select><br/><br/>
+
+				<!-- Textarea for message -->
+  				<label for="message">Message:</label>
+  				<textarea class="message" name="message" data-parsley-maxlength="200"></textarea><br/><br/>
+
+  				<!-- Submit button -->
+  				<input class="submit" type="submit" value="submit" />
+			</form>
+			</div>
+			
+			<!-- Dialog box that pops up when form is submitted -->
+			<div class="submit-message">Thank you for contacting us! We will contact you shortly.</div>
+			</div>
+		</div>
+
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>		
+		<script src="js/contact.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>

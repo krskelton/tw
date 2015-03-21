@@ -1,0 +1,45 @@
+<!-- Kristin Skelton 3/13/15 Final Project
+Images page for Tracksuit Wedding website -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Tracksuit Wedding</title>	
+		<link href='http://fonts.googleapis.com/css?family=Cuprum' rel='stylesheet' type='text/css'>		
+		<link type="text/css" rel="stylesheet" href="css/lightGallery.css" />
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+	<body>
+		<!-- Header for logo and navigation -->
+		<div id="header" class="not-main-header">
+			<ul id="nav">
+				<li><a href="index.html"><img id="logo" src="css/images/Tracksuitlogo3.png"></a></li>			
+				<div id="links">
+					<li id="nav_about"><a href="about.html">About</a></li>
+					<li id="nav_gallery"><a href="gallery.html">Images</a></li>
+					<li id="nav_contact"><a href="contact.html">Contact</a></li>
+				</div>
+			</ul>
+		</div>
+		<div class="header-room"></div>
+		
+		<!-- Div to dynamically load the photos from the tracksuit wedding flickr album -->
+		<div class="light-gallery">
+			<ul id="lightGallery"></ul>	
+		</div>
+		
+		<!-- Footer with links to social media and displays the IP address of the user -->
+		<div class="footer-images">
+			<a href="https://twitter.com/TracksuitW?lang=en"><img class="social" src="css/images/twitter.png"></a>
+			<a href="https://www.facebook.com/tracksuitwedding"><img class="social" src="css/images/facebook.png"></a>
+		</div>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>	 
+		 <script src="js/flickr.js"></script>
+		 <script src="js/lightGallery.js"></script>		 
+		 <script src="js/script.js"></script>
+		
+	</body>
+</html>
